@@ -1,0 +1,13 @@
+<div class="register" ng-controller="register">
+<h3>手机注册</h3><br>
+<form name="register">
+<lebal>手机号码：</lebal>
+<input class="register_mobile" type="text" name='mobile' ng-model='register.phone' required ng-pattern="/^\d{11}$/" ><br>
+<span class="error" ng-show='register.mobile.$error.pattern'>手机号码不正确</span><br>
+<lebal>电子邮箱：</lebal>
+<input class="register_email" type="text" name='email' ng-model='register.email' required ng-pattern="/^\d{11}$/"><br>
+<span class="error" ng-show='register.email.$error.pattern'>请正确输入邮箱</span><br>
+<input type="checkbox" class="register_checkbox"><span>记住密码</span><br>
+<input class="register_submit" type="submit" value="注册">
+<form>
+</div>

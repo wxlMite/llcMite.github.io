@@ -4,7 +4,7 @@ app.config(['$routeProvider', function($routeProvider){
                 $routeProvider
                 .when('/',{templateUrl:'template/boke_index.html'})
                 .when('/company',{template:'这是电脑分类'})
-                .when('/list',{template:'前端课程'})
+                .when('/list',{templateUrl:'template/boke_angular.html'})
                 .when('/help',{template:'帮帮我'})
                 .otherwise({redirectTo:'/'});
             }]);

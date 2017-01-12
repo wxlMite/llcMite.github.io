@@ -1,6 +1,8 @@
-<div class="shop_sum">
+<div class="shop_sum" ng-controller='shop_sum'>
 <h1>购物车统计</h1>
-<p>单价：{{shopPrice}}</p>
-<input type="text" ng-model='shopNum'>
-<p>{{shopFee}}</p>
+<p>单价：{{flower.shopPrice}}</p>
+<input type="number" ng-model='flower.shopNum' >
+<p>数量：{{flower.shopNum}}</p>
+<p>运费：{{flower.shopFee}}</p>
+<p>合计：{{sum()}}</p>
 </div>
