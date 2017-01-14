@@ -41,6 +41,7 @@ nav .nav_ul .li_active {
 }
 .comwidth {
   width: 1000px;
+  height: 800px;
   margin: 0 auto;
   background: #fff;
   margin-top: 50px;
@@ -72,4 +73,13 @@ input {
   outline: none;
   border-redius: 5px;
   padding-left: 5px;
+}
+.angular_list {
+  width: 250px;
+  height: 200px;
+  margin: 20px 0 0 20px;
+  float: left;
+  padding: 20px;
+  background: orange;
+  color: #fff;
 }

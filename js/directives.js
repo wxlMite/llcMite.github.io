@@ -12,4 +12,12 @@ app.directive('login',function(){
 	     templateUrl:'template/register.html',
 	     replace:true
 	}
+});
+
+app.directive('apply',function(){
+    return{
+		restrict:'E',
+		templateUrl:'template/apply.html',
+		replace:true
+	}
 })
