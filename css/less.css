@@ -1,75 +1,157 @@
-@charset "UTF-8";
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2017-01-09 10:57:54
- * @version $Id$
- */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 body {
-  background: url(../img/bg.png) repeat;
-  font-size: 14px;
-  font-family: Arial, 'Microsoft YaHei';
+  background: #333333;
+  font-size: 12px;
+  font-family: "宋体";
 }
-nav {
-  width: 1920px;
-  height: 41px;
-  background: #000;
-  border-bottom: solid 2px #e15671;
+li {
+  list-style: none;
 }
-nav .nav_ul {
-  width: 1000px;
-  height: 41px;
-  margin: 0 auto;
-}
-nav .nav_ul li {
-  float: right;
-  display: block;
-  line-height: 41px;
-  height: 41px;
-  padding: 0 20px 0 20px;
-}
-nav .nav_ul li a {
-  color: #fff;
+a {
+  text-align: center;
   text-decoration: none;
 }
-nav .nav_ul .li_active {
-  background: #e15671;
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
 }
 .comwidth {
   width: 1000px;
   margin: 0 auto;
-  background: #fff;
+}
+.head {
+  background: #222222;
+  width: 100%;
+  height: 70px;
+  border-bottom: #464647 solid 1px;
+  box-shadow: 0 0 1px #000;
   margin-top: 50px;
-  box-shadow: 0px 0px 5px 5px #fff;
 }
-.register {
-  width: 280px;
-  height: 200px;
-  background: #ccc;
-  border-radius: 10px;
-  padding: 5px;
+.radius {
+  border-radius: 6px;
+  border-top: #000 solid 1px;
+  border-bottom: #464647;
 }
-.register .register_mobile,
-.register .register_email,
-.register .register_submit {
-  width: 180px;
+.head a {
+  padding: 16px 30px 16px 30px;
+  display: inline-block;
+  backgroud: #171717;
+  color: #fff;
+  font-size: 14px;
+  margin: 11px 10px 0px 0px;
+  text-align: center;
+}
+.main {
+  margin-top: 50px;
+}
+.banner {
+  width: 630px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.banner_ul {
+  height: 250px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.banner_ul li {
+  width: 630px;
+  height: 250px;
+  float: left;
+  position: relative;
+}
+.banner_context {
+  width: 630px;
+  height: 130px;
+  position: absolute;
+  top: -130px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.banner_context h5 {
+  margin: 34px 0px 0px 20px;
+}
+.banner_context p {
+  margin: 10px 0px 0px 20px;
+  width: 590px;
+}
+.banner_page {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  width: 155px;
+  z-index: 2;
+}
+.banner_page a {
+  width: 20px;
+  heiht: 20px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: bolder;
+  line-height: 20px;
+}
+.resume {
+  width: 350px;
+  height: 250px;
+  background: #2a2a2a;
+  border-bottom: #464647 solid 1px;
+  box-shadow: 0 0 1px #000;
+}
+.resume h3 {
+  color: #3f3e3c;
+  font-size: 24px;
+  padding: 15px 0px 5px 10px;
+  width: 340;
   height: 32px;
+  background: url(../img/quote-bg.png) top right no-repeat;
 }
-.register .register_submit {
-  margin: 10px 0px 0px 40px;
-  border-radius: 10px;
+.my_resume {
+  padding: 5px 0px 0px 20px;
+  display: block;
 }
-.error {
-  color: red;
-  font-size: 12px;
+.resume p {
+  color: #89919a;
+  line-height: 32px;
+  padding-left: 38px;
+  text-shadow: 2px 2px 1px  #000;
+  font-size: 14px;
 }
-input {
-  border: none;
-  outline: none;
-  border-redius: 5px;
-  padding-left: 5px;
+.my_resume span {
+  width: 52px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 1px solid #000;
+  border-bottom: #464647 solid 1px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.my_resume span a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../img/icons.png) no-repeat;
+  margin: 15px 0px 0px 13px;
+}
+.my_resume .talk2 {
+  background-position: 0px -38px;
+}
+.my_resume .talk3 {
+  background-position: 0px -76px;
+}
+.my_resume .talk4 {
+  background-position: 0px -114px;
+}
+.my_resume .talk5 {
+  background-position: 0px -152px;
 }

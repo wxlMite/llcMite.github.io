@@ -5,7 +5,7 @@
  * @date    2017-01-09 11:47:18
  * @version $Id$
  */
-.nav_ul li{transition:1s}
-.ng-show{
-            	background: rgb(225,86,113);
-            }
+.head a:hover{background: rgb(23,23,23); border-radius: 6px; border-bottom:rgb(70,70,71) solid 1px;} 
+.banner_page a:hover{background: rgba(0,0,0,0.8);}
+.banner_list_active{background: rgba(0,0,0,0.8)!important;}
+.my_resume span a:hover{opacity:0.4; transform:rotateZ(30deg)}
