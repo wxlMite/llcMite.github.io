@@ -6,6 +6,7 @@ body {
   background: #333333;
   font-size: 12px;
   font-family: "宋体";
+  color: #b9b9b9;
 }
 li {
   list-style: none;
@@ -20,9 +21,22 @@ a {
 .fr {
   float: right;
 }
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.orange {
+  color: orange;
+}
+.green {
+  color: #366!important;
+  font-weight: normal;
+}
 .comwidth {
   width: 1000px;
-  height: 800px;
   margin: 0 auto;
 }
 .head {
@@ -36,7 +50,7 @@ a {
 .radius {
   border-radius: 6px;
   border-top: #000 solid 1px;
-  border-bottom: #464647;
+  border-bottom: #464647 solid 1px;
 }
 .head a {
   padding: 16px 30px 16px 30px;
@@ -122,7 +136,6 @@ a {
   display: block;
 }
 .resume p {
-  color: #89919a;
   line-height: 32px;
   padding-left: 38px;
   text-shadow: 2px 2px 1px  #000;
@@ -143,6 +156,7 @@ a {
   display: block;
   background: url(../img/icons.png) no-repeat;
   margin: 15px 0px 0px 13px;
+  transition: 0.5s;
 }
 .my_resume .talk2 {
   background-position: 0px -38px;
@@ -156,12 +170,271 @@ a {
 .my_resume .talk5 {
   background-position: 0px -152px;
 }
-.angular_list {
-  width: 250px;
-  height: 200px;
-  margin: 20px 0 0 20px;
+.article_list {
+  width: 666px;
+  border-right: #171717 solid 2px;
+  margin-top: 40px;
+}
+.article_box {
+  padding: 20px 0px 20px 0px;
+  position: relative;
+}
+.article {
+  width: 630px;
+  height: 201px;
+  background: #222222;
+}
+.ti {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 44px;
+  right: 12px;
+  border-top: 0px transparent solid;
+  border-bottom: 20px transparent solid;
+  border-left: 24px solid #171717;
+}
+.ci {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top: 40px;
+  right: -5px;
+}
+.article h4 {
+  margin: 15px 0px 0px 20px;
+  font-size: 16px;
+  transition: 1s;
+}
+.article_context img {
+  margin: 14px 0px 0px 25px;
   float: left;
-  padding: 20px;
-  background: orange;
-  color: #fff;
+  width: 165px;
+  height: 100px;
+}
+.article_context p {
+  margin: 12px 0px 0px 25px;
+  width: 400px;
+  float: left;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.article_footer {
+  width: 630px;
+  height: 25px;
+  background: #171717;
+  position: absolute;
+  bottom: 21px;
+  left: 0px;
+  border-radius: 0px 0px 6px 6px;
+  color: #3f3e3c;
+}
+.article_time b,
+.article_talk b,
+.article_zan b {
+  background: url(../img/icons.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 2px;
+}
+.article_talk b {
+  background-position: 0px -220px;
+}
+.article_zan b {
+  background-position: 0px -240px;
+}
+.article_time b {
+  background-position: 0px -202px;
+}
+.article_talk {
+  margin-right: 20px;
+}
+.article_zan {
+  margin-right: 30px;
+}
+.article_time {
+  margin-left: 10px;
+}
+.sidebar {
+  margin-top: 40px;
+}
+.good_article,
+.img_article,
+.hot_click,
+.search,
+.my_music {
+  width: 310px;
+  background: #222222;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+.good_article li,
+.hot_click li {
+  padding-left: 10px;
+  margin-top: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.good_article h3,
+.img_article h3,
+.hot_click h3 {
+  padding: 15px 0px 0px 10px;
+  text-shadow: 5px 4px 1px #000;
+}
+.good_article i {
+  width: 250px;
+  font-style: normal;
+  font-size: 12px;
+  transition: ease-in-out 1s;
+}
+.good_article span {
+  color: #3f3e3c;
+  padding-right: 7px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.good_article li:first-child span {
+  color: #f8490b;
+}
+.good_article li:first-child span b {
+  font-size: 25px;
+}
+.good_article li:nth-child(2) span {
+  color: #b9b9b9;
+}
+.good_article li:nth-child(2) span b {
+  font-size: 23px;
+}
+.good_article li:nth-child(3) span {
+  color: #b9b9b9;
+}
+.good_article li:nth-child(3) span b {
+  font-size: 21px;
+}
+.img_article img {
+  width: 75px;
+  height: 55px;
+  float: left;
+  padding: 10px 10px 5px 10px;
+}
+.img_article p {
+  padding-top: 8px;
+  width: 192px;
+  transition: 1s;
+}
+.img_talk_1,
+.img_talk_2,
+.img_talk_3 {
+  background: url(../img/icons.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding-right: 3px;
+}
+.img_talk_1 {
+  background-position: 0px -263px;
+}
+.img_talk_2 {
+  background-position: 0px -282px;
+}
+.img_talk_3 {
+  background-position: 0px -301px;
+}
+.hot_click li span {
+  color: #3f3e3c;
+  font-size: 12px;
+  font-weight: bold;
+}
+.hot_click ul {
+  margin-top: 15px;
+}
+.hot_click .hot_text {
+  width: 210px;
+  font-style: normal;
+  font-size: 12px;
+  transition: ease-in-out 1s;
+  color: #b9b9b9;
+}
+.search_text {
+  border: solid 1px rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 30px;
+  margin: 25px 20px 10px 35px;
+  background: #3f3e3c url(../img/icons.png) no-repeat;
+  border-radius: 2px;
+  background-position: 6px -318px;
+  padding-left: 30px;
+  color: #b9b9b9;
+}
+.my_music {
+  position: relative;
+  height: 150px;
+}
+.icon_img {
+  width: 100px;
+  height: 85px;
+  float: left;
+  margin: 10px 0px 0px 20px;
+  background: url(../img/vinyl.png) center right no-repeat;
+  position: relative;
+}
+.icon_img img {
+  width: 78px;
+  height: 85px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.icon_song b,
+.icon_artist b,
+.icon_album b,
+.icon_like b {
+  background: url(../img/icons.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding-right: 3px;
+}
+.icon_song {
+  padding: 10px 0px 0px 130px;
+}
+.icon_artist {
+  padding: 5px 0px 0px 145px;
+}
+.icon_album {
+  padding: 5px 0px 0px 160px;
+}
+.icon_like {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: #B5783E;
+}
+.icon_song b {
+  background-position: 0px -347px;
+}
+.icon_artist b {
+  background-position: -16px -347px;
+}
+.icon_album b {
+  background-position: -32px -347px;
+}
+.icon_like b {
+  background-position: 0px -301px;
+}
+.music {
+  width: 270px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.music audio {
+  width: 270px;
+  height: 30px;
+  border-radius: 5px;
 }

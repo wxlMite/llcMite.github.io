@@ -1,88 +1,21 @@
-<<<<<<< HEAD
 *{margin:0;padding:0;}
-body{background: rgb(51,51,51); font-size:12px; font-family: "宋体";}
+body{background: rgb(51,51,51); font-size:12px; font-family: "宋体"; color:rgb(185,185,185);}
 li{list-style:none;}
 a{text-align:center; text-decoration:none;}
 .fl{float:left;}
 .fr{float:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.orange{color:orange;}
+.green{color:#366!important; font-weight: normal;}
 .comwidth{width:1000px; margin:0 auto;}
+
+//头部
 .head{background: rgb(34,34,34); width:100%; height:70px; border-bottom:rgb(70,70,71) solid 1px;
  box-shadow: 0 0 1px #000; margin-top:50px;}
-.radius{border-radius:6px; border-top:#000 solid 1px; border-bottom:rgb(70,70,71)}
+.radius{border-radius:6px; border-top:#000 solid 1px; border-bottom:rgb(70,70,71) solid 1px; }
 .head a{padding:16px 30px 16px 30px; display: inline-block; backgroud:rgb(23,23,23); 
-	color:#fff;  font-size:14px; margin:11px 10px 0px 0px; text-align: center;
-=======
-@charset "UTF-8";
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2017-01-09 10:57:54
- * @version $Id$
- */
-*{margin:0px; padding:0px;}
-body{
-	background: url(../img/bg.png) repeat;
-	font-size:14px;
-	font-family: Arial, 'Microsoft YaHei';
-}
-nav{
-	width:1920px;
-	height:41px;
-	background: #000;
-	border-bottom:solid 2px #e15671;
-	
+	color:#fff;  font-size:14px; margin:11px 10px 0px 0px; text-align: center;}
 
-	.nav_ul{
-		width:1000px;
-		height:41px;
-		margin:0 auto;
-		li{
-			float:right;
-			display:block;
-			line-height:41px;
-			height:41px;
-			padding:0 20px 0 20px;
-            a{
-            	color:#fff;
-            	text-decoration: none;
-            }
-		}
-		.li_active{
-            	background: rgb(225,86,113);
-            }
-	}
-}
-.comwidth{
-	width:1000px;
-	height:800px;
-	margin:0 auto;
-	background: #fff;
-	margin-top:50px;
-	box-shadow: 0px 0px 5px 5px #fff;
-}
-
-.register{
-	width:280px;
-	height:200px;
-	background: #ccc;
-	border-radius: 10px;
-	padding:5px;
-	.register_mobile,.register_email,.register_submit{width:180px; height:32px; }
-	.register_submit{margin:10px 0px 0px 40px; border-radius: 10px;}
-}
-
-.error{
-	color:red;
-	font-size:12px;
-}
-
-input{
-	border:none;
-	outline:none;
-	border-redius:5px;
-	padding-left:5px;
->>>>>>> 459cf371e4a31a075f36a730bce42dc7fb86fcec
-}
 .main{margin-top:50px;}
 // 轮播
 .banner{width:630px; height:250px; position:relative; overflow: hidden;}
@@ -96,28 +29,95 @@ color:#fff;}
 .banner_page a{width:20px; heiht:20px; display:inline-block; background: rgba(0,0,0,0.3); color:#fff; 
 	font-weight:bolder; line-height: 20px;}
 
-<<<<<<< HEAD
+//推荐文章
 .resume{width:350px; height:250px;  background: rgb(42,42,42); border-bottom:rgb(70,70,71) solid 1px;
  box-shadow: 0 0 1px #000;}
 .resume h3{color:rgb(63,62,60); font-size:24px; padding:15px 0px 5px 10px; width:340; height:32px; 
 	background: url(../img/quote-bg.png) top right no-repeat;}
 .my_resume{padding:5px 0px 0px 20px; display:block; }
-.resume p{color:rgb(137,145,154); line-height:32px; padding-left:38px; text-shadow:2px 2px 1px  #000; font-size:14px;}
+.resume p{ line-height:32px; padding-left:38px; text-shadow:2px 2px 1px  #000;
+ font-size:14px;}
 .my_resume span{width:52px; height:50px; border-radius: 50%; border-top: 1px solid #000;
  border-bottom:rgb(70,70,71) solid 1px; display:inline-block; margin-right:5px;}
 .my_resume span a{width:30px; height:30px; display:block;
- background: url(../img/icons.png) no-repeat; margin:15px 0px 0px 13px;} 
+ background: url(../img/icons.png) no-repeat; margin:15px 0px 0px 13px; transition:0.5s;} 
  .my_resume .talk2{background-position: 0px -38px;}
  .my_resume .talk3{background-position: 0px -76px;}
  .my_resume .talk4{background-position: 0px -114px;}
  .my_resume .talk5{background-position: 0px -152px;}
-=======
-.angular_list{
-	width:250px; height:200px;
-	margin:20px 0 0 20px; 
-	float:left;
-	padding:20px;
-	background: orange;
-	color:#fff;
-}
->>>>>>> 459cf371e4a31a075f36a730bce42dc7fb86fcec
+
+.article_list{width:666px; border-right:rgb(23,23,23) solid 2px; margin-top:40px;}
+.article_box{padding:20px 0px 20px 0px; position:relative;}
+.article{width:630px; height:201px;  background: rgb(34,34,34)}
+.ti{width:0px; height:0px; position:absolute; top:44px; right:12px;
+	border-top:0px transparent solid; 
+	border-bottom: 20px transparent solid; 
+	border-left:24px solid rgb(23,23,23);}
+.ci{width:10px;height:10px; border-radius:50%; background: #000; position:absolute; top:40px; right:-5px;}
+.article h4{margin:15px 0px 0px 20px; font-size:16px; transition:1s;}
+.article_context img{margin:14px 0px 0px 25px; float: left; width:165px; height:100px;}
+.article_context p{margin:12px 0px 0px 25px; width:400px; float: left; letter-spacing:2px; line-height: 20px;}
+.article_footer{width:630px; height:25px; background: rgb(23,23,23); position:absolute; bottom:21px; left:0px;
+border-radius:0px 0px 6px 6px; color:rgb(63,62,60);}
+.article_time b,.article_talk b,.article_zan b{background:url(../img/icons.png) no-repeat;
+	width: 17px; height: 17px;
+display: inline-block; margin-right:2px; }
+.article_talk b{ background-position: 0px -220px; }
+.article_zan b{ background-position: 0px -240px;}
+.article_time b{ background-position: 0px -202px;}
+.article_talk{margin-right:20px;}
+.article_zan{margin-right:30px;}
+.article_time{margin-left:10px;}
+//热文推荐
+.sidebar{margin-top:40px;}
+.good_article,.img_article,.hot_click,.search,.my_music{width:310px; background: rgb(34,34,34);
+	margin-top:20px; padding-bottom:15px;
+	}
+.good_article li,.hot_click li{padding-left:10px; margin-top: 5px; white-space:nowrap; 
+	text-overflow:ellipsis; overflow:hidden;}
+.good_article h3,.img_article h3,.hot_click h3{padding:15px 0px 0px 10px; text-shadow:5px 4px 1px #000;}
+.good_article i{  width:250px; font-style: normal; font-size: 12px;transition:ease-in-out 1s;}
+.good_article span{color:rgb(63,62,60); padding-right:7px; font-weight: bold; font-size:16px;}
+.good_article li:first-child span{color:#f8490b;}
+.good_article li:first-child span b{font-size:25px;}
+.good_article li:nth-child(2) span{color:rgb(185,185,185);}
+.good_article li:nth-child(2) span b{font-size:23px;}
+.good_article li:nth-child(3) span{color:rgb(185,185,185);}
+.good_article li:nth-child(3) span b{font-size:21px;}
+
+//图文并茂
+.img_article img{width:75px; height:55px; float:left; padding:10px 10px 5px 10px;}
+.img_article p{padding-top:8px; width:192px; transition:1s;}
+.img_talk_1,.img_talk_2,.img_talk_3{background: url(../img/icons.png) no-repeat; width:15px;height:15px;
+ display:inline-block; padding-right:3px;}
+.img_talk_1{background-position: 0px -263px;}
+.img_talk_2{background-position: 0px -282px;}
+.img_talk_3{background-position: 0px -301px;}
+
+//最热点击
+.hot_click li span{color:rgb(63,62,60); font-size: 12px; font-weight: bold;}
+.hot_click ul{margin-top:15px;}
+.hot_click .hot_text{width:210px; font-style: normal; font-size: 12px;
+	transition:ease-in-out 1s; color:rgb(185,185,185)}
+
+.search_text{border: solid 1px rgba(0,0,0,0.8); width:200px; height:30px; margin:25px 20px 10px 35px;
+background: rgb(63,62,60) url(../img/icons.png) no-repeat; border-radius:2px; 
+background-position:6px -318px; padding-left:30px; color:rgb(185,185,185)}
+
+.my_music{position:relative; height: 150px;}
+.icon_img{width:100px; height: 85px; float:left; margin:10px 0px 0px 20px;
+ background: url(../img/vinyl.png) center right no-repeat; position: relative;}
+.icon_img img{width:78px; height:85px; position:absolute; top:0px; left: 0px;}
+.icon_song b,.icon_artist b,.icon_album b,.icon_like b{background: url(../img/icons.png) no-repeat; 
+	width:15px; height:15px; display: inline-block; padding-right:3px;}
+.icon_song{padding: 10px 0px 0px 130px;}
+.icon_artist{padding: 5px 0px 0px 145px;}
+.icon_album{padding: 5px 0px 0px 160px;}
+.icon_like{position: absolute; bottom:50px; left:20px; color:#B5783E;}	
+.icon_song b{background-position: 0px -347px;}
+.icon_artist b{background-position: -16px -347px;}
+.icon_album b{background-position: -32px -347px;}
+.icon_like b{background-position: 0px -301px;}
+
+.music{width:270px; height:30px; position: absolute; bottom:10px; left:20px;}
+.music audio{width:270px; height:30px; border-radius: 5px;}
