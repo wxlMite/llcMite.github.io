@@ -22,6 +22,7 @@ a {
 }
 .comwidth {
   width: 1000px;
+  height: 800px;
   margin: 0 auto;
 }
 .head {
@@ -154,4 +155,13 @@ a {
 }
 .my_resume .talk5 {
   background-position: 0px -152px;
+}
+.angular_list {
+  width: 250px;
+  height: 200px;
+  margin: 20px 0 0 20px;
+  float: left;
+  padding: 20px;
+  background: orange;
+  color: #fff;
 }
