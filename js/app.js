@@ -2,9 +2,12 @@ var app=angular.module('myapp',['ngRoute','ngAnimate']);
 
 app.config(['$routeProvider', function($routeProvider){
                 $routeProvider
-                .when('/',{templateUrl:'template/boke_index.html'})
-                .when('/company',{template:'这是电脑分类'})
-                .when('/list',{templateUrl:'template/boke_angular.html'})
-                .when('/help',{template:'帮帮我'})
+                .when('/',{templateUrl:'template/index.html'})
+                .when('/write',{template:'心情随写'})
+                .when('/work',{template:'工作经历'})
+                .when('/project',{template:'我的项目'})
+                .when('/example',{template:'js实例'})
+                .when('/skill',{template:'我的技能'})
+                .when('/record',{template:'学习笔录'})
                 .otherwise({redirectTo:'/'});
             }]);

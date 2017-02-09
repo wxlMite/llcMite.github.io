@@ -1,23 +1,36 @@
-app.directive('shop',function(){
+app.directive('header',function(){
 	return{
 	    restrict:'E',
-	    templateUrl:'template/shop.html',
+	    templateUrl:'template/head.html',
+	    replace:true
+	}
+});
+app.directive('foot',function(){
+	return{
+	    restrict:'E',
+	    templateUrl:'template/foot.html',
+	    replace:true
+	}
+});
+app.directive('resume',function(){
+	return{
+	    restrict:'E',
+	    templateUrl:'template/resume.html',
+	    replace:true
+	}
+});
+app.directive('article',function(){
+	return{
+	    restrict:'E',
+	    templateUrl:'template/article.html',
+	    replace:true
+	}
+});
+app.directive('sidebar',function(){
+	return{
+	    restrict:'E',
+	    templateUrl:'template/sidebar.html',
 	    replace:true
 	}
 });
 
-app.directive('login',function(){
-	return{
-	     restrict:'E',
-	     templateUrl:'template/register.html',
-	     replace:true
-	}
-});
-
-app.directive('apply',function(){
-    return{
-		restrict:'E',
-		templateUrl:'template/apply.html',
-		replace:true
-	}
-})
