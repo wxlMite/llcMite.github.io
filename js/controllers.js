@@ -49,3 +49,10 @@ app.controller('apply',function($scope){
 		
 	}
 })
+
+//个人简介
+app.controller('resume',function($scope,$resource){
+	var resume=$resource('data/resume.json');
+    
+    console.log(resume)
+})

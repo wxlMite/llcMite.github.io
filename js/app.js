@@ -1,4 +1,4 @@
-var app=angular.module('myapp',['ngRoute','ngAnimate']);
+var app=angular.module('myapp',['ngRoute','ngAnimate','ngResource']);
 
 app.config(['$routeProvider', function($routeProvider){
                 $routeProvider
@@ -11,3 +11,4 @@ app.config(['$routeProvider', function($routeProvider){
                 .when('/record',{template:'学习笔录'})
                 .otherwise({redirectTo:'/'});
             }]);
+

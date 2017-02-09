@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='myapp'>
+<head>
+<meta charset="utf-8">
+
+<title></title>
+<script src="angularJS/angular.js"></script>
+<script src='angularJs/angular-resource.js'></script>
+</head>
+<body>
+    <div ng-controller='mytl'>
+    	
+    </div>
+<script>
+	var app=angular.module('myapp',['ngResource']);
+	app.controller('mytl'.function($scope,$resourse){
+		var resume=$resourse('resume.json');
+		console,log(resume))
+	})
+</script>
+</body>
+</html>
