@@ -6,17 +6,21 @@
 <title>首页</title>
 <link rel="stylesheet" href="css/less.css">
 <link rel="stylesheet" href="css/ngAnimate.css">
-<script src="angularJS/angular.js"></script>
-<script src="angularJS/angular-route.js"></script>
-<script src='angularJS/angular-animate.js'></script>
-<script src='angularJs/angular-resource.js'></script>
-<script src='js/app.js'></script>
-<script src='js/directives.js'></script>
-<script src='js/controllers.js'></script>
+
 <script src='js/scripts.js'></script>
 </head>
 <body>
-<header></header>
+<div class="head">
+  <div class="comwidth">
+  <a href="#/">博客首页</a>
+  <a href="#/write">心情随写</a>
+  <a href="#/work">工作经历</a>
+  <a href="#/project">我的项目</a>
+  <a href="#/example">js实例</a>
+  <a href="#/skill">我的技能</a> 
+  <a href="#/record">学习笔录</a>
+  </div>
+</div>
 
 <div class="main clearfix">
    <div class="comwidth">
@@ -44,12 +48,243 @@
         </ul>
       </div>
       <!-- 个人简历 -->
-      <resume></resume>     
+      <div class="resume radius fr">
+         <h3>我的名片</h3>
+         <div class="resume_box">
+           <p>姓名：刘立冲 || 网名：Mite</p>
+           <p>职业：web前端</p>
+           <p>电话：13632206621</p>
+           <p>email:131649580@qq.com</p>
+         </div>
+         <span class="my_resume" ng-controller="resume">
+           <span><a href="javascript:;" class="talk1" title="Mite的简历"></a></span>
+           <span><a href="javascript:;" class="talk2" title="Mite详细住址"></a></span>
+           <span><a href="javascript:;" class="talk3" title="Mite联系方式"></a></span>
+           <span><a href="javascript:;" class="talk4" title="Mite的爱好"></a></span>
+           <span><a href="javascript:;" class="talk5" title="Mite的相片"></a></span>           
+         </span>
+      </div>    
    </div>
 </div>
-<section ng-view></section>
+<div class="comwidth clearfix">
+   <!-- 文章列表 -->
+   <ul class="article_list fl">
+       <li class="article_box">
+           <div class="article radius">
+             <h4>我希望的爱情是这样的</h4>
+             <div class="article_context clearfix">
+               <img src="img/s1.jpg">
+               <p>我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+             </div>
+             <div class="article_footer">
+             <span class="article_time fl"><b></b>2013-8-7</span>
+             <span class="article_talk fr"><b></b>34</span>
+             <span class="article_zan fr"><b></b>10</span>
+           </div>
+           
+           </div>
+           <div class='ti'></div>
+           <div class='ci'></div>           
+       </li>
+       <li class="article_box">
+           <div class="article radius">
+             <h4>我希望的爱情是这样的</h4>
+             <div class="article_context clearfix">
+               <img src="img/s1.jpg">
+               <p>我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+             </div>
+             <div class="article_footer">
+             <span class="article_time fl"><b></b>2013-8-7</span>
+             <span class="article_talk fr"><b></b>34</span>
+             <span class="article_zan fr"><b></b>10</span>
+           </div>
+           
+           </div>
+           <div class='ti'></div>
+           <div class='ci'></div>           
+       </li><li class="article_box">
+           <div class="article radius">
+             <h4>我希望的爱情是这样的</h4>
+             <div class="article_context clearfix">
+               <img src="img/s1.jpg">
+               <p>我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+             </div>
+             <div class="article_footer">
+             <span class="article_time fl"><b></b>2013-8-7</span>
+             <span class="article_talk fr"><b></b>34</span>
+             <span class="article_zan fr"><b></b>10</span>
+           </div>
+           
+           </div>
+           <div class='ti'></div>
+           <div class='ci'></div>           
+       </li><li class="article_box">
+           <div class="article radius">
+             <h4>我希望的爱情是这样的</h4>
+             <div class="article_context clearfix">
+               <img src="img/s1.jpg">
+               <p>我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+             </div>
+             <div class="article_footer">
+             <span class="article_time fl"><b></b>2013-8-7</span>
+             <span class="article_talk fr"><b></b>34</span>
+             <span class="article_zan fr"><b></b>10</span>
+           </div>
+           
+           </div>
+           <div class='ti'></div>
+           <div class='ci'></div>           
+       </li><li class="article_box">
+           <div class="article radius">
+             <h4>我希望的爱情是这样的</h4>
+             <div class="article_context clearfix">
+               <img src="img/s1.jpg">
+               <p>我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+             </div>
+             <div class="article_footer">
+             <span class="article_time fl"><b></b>2013-8-7</span>
+             <span class="article_talk fr"><b></b>34</span>
+             <span class="article_zan fr"><b></b>10</span>
+           </div>
+           
+           </div>
+           <div class='ti'></div>
+           <div class='ci'></div>           
+       </li>
+   </ul>
+  <!-- 侧边栏 -->
+   <div class="sidebar fr">
+     <div class="good_article radius">
+       <h3>推荐文章</h3>
+       <ul class="good_article_list">
+         <li><span>0<b>1</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>2</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>3</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>4</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>5</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>6</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>7</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>8</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+         <li><span>0<b>9</b></span><i>有一种幸福是淡淡的思念，一个心情，一个微笑</i></li>
+        
+       </ul>
+     </div>
 
-<foot></foot>
+     <div class="img_article radius">
+       <h3>图文并茂</h3>
+       <div class="img_article_box clearfix">
+         <img src="img/k01.jpg">
+         <div class="fl">
+         <p>前任问我，你还爱我吗？无限戳中泪点</p>
+         <p class="orange"><b class="img_talk_1"></b>伤不起</p>
+         </div>
+       </div>
+       <div class="img_article_box clearfix">
+         <img src="img/k01.jpg">
+         <div class="fl">
+         <p>前任问我，你还爱我吗？无限戳中泪点</p>
+         <p class="orange"><b class="img_talk_2"></b>伤不起</p>
+         </div>
+       </div>
+       <div class="img_article_box clearfix">
+         <img src="img/k01.jpg">
+         <div class="fl">
+         <p>前任问我，你还爱我吗？无限戳中泪点</p>
+         <p class="orange"><b class="img_talk_3"></b>伤不起</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="hot_click radius">
+       <h3>热门点击</h3>
+       <ul>
+         <li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li>
+         <li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li><li><span>【<a href="javascript:;" class="green">慢生活</a>】</span><a href="javascript:;" class="hot_text">有一种幸福是淡淡的思念，一个心情，一个微笑</a></li>
+       </ul>
+     </div>
+
+     <div class="search radius">
+       <input type="text" class="search_text" placeholder="Search">
+     </div>
+
+     <div class="my_music radius">
+       <dl>
+         <dt class="icon_img"><img src="img/artwork.png"></dt>
+         <dd class="icon_song"><b></b>光辉岁月</dd>
+         <dd class="icon_artist"><b></b>歌手：黄家驹</dd>
+         <dd class="icon_album"><b></b>所属专辑:光辉岁月</dd>
+         <dd class="icon_like"><b></b>喜欢</dd>
+         <dd class="music">
+           <audio src="Beyond.mp3" controls>
+             你的浏览器不支持
+           </audio>
+         </dd>
+       </dl>
+     </div>
+   </div>
+</div>
+
+<div class="footer">
+  <div class="footer_top">
+    <div class="comwidth">
+      <div class="footer_box_1 fl">
+        <h4>友情链接</h4>
+        <a href="javascript:;">Mite的个人微信公众号</a>
+        <a href="javascript:;">Mite的个人微博</a>
+      </div>
+      <div class="footer_box_2 fl">
+        <h4>最新评论</h4>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="footer_box_3 fr">
+        <h4>摄影作品</h4>
+        <div class="photo_show">
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="img/s7.jpg"><span class="photo_mask"></span></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="comwidth">
+      <p><span class="gray">Copyright 2013 make by</span> Mite </p>
+    </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>
