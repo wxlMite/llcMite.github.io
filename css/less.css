@@ -117,11 +117,11 @@ b {
   right: 0;
   margin: auto;
   width: 155px;
-  z-index: 2;
+  z-index: 99;
 }
 .banner_page a {
   width: 20px;
-  heiht: 20px;
+  height: 20px;
   display: inline-block;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;

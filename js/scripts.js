@@ -3,6 +3,12 @@ window.onload=function(){
 	var banner=document.querySelector('.banner');
 	var oUl=document.querySelector('.banner_ul');
 	var oLi=document.querySelectorAll('.banner_ul li');
+
+  var oUl1=oUl.cloneNode(true);
+  banner.appendChild(oUl1);
+  oUl1.style.zIndex='9';
+  oUl.style.zIndex='10';
+
 	var w=oLi[0].offsetWidth;
 	oUl.style.width=w*oLi.length+'px';
 	banner.num=0;
@@ -18,14 +24,28 @@ window.onload=function(){
     oList[0].classList.add('banner_list_active');
     banner_op(iNum);
     oNext.onclick=function(){
-        if(iNum!=oLi.length-1){iNum++}else{iNum=0;};
+        if(iNum!=oLi.length-1){
+          iNum++
+        }else{
+          oUl.style.left=w+'px';
+          oUl1.style.left=-(oLi.length-1)*w+'px';
+          iNum=0;
+        };
         startMove(oUl,{'left':-iNum*w},banner_op(iNum));
+        startMove(oUl1,{'left':-oLi.length*w});
         bannerActiveNum(iNum);
         
     };
     oPrev.onclick=function(){
-    	if(iNum!=0){iNum--}else{iNum=oLi.length-1;};
+    	if(iNum!=0){
+        iNum--;
+      }else{
+        iNum=oLi.length-1;
+        oUl.style.left=-oLi.length*w+'px';
+        oUl1.style.left='0px'
+      };
         startMove(oUl,{'left':-iNum*w},banner_op(iNum));
+        startMove(oUl1,{'left':w});
         bannerActiveNum(iNum);
     };
     for(var i=0; i<oList.length; i++){
@@ -38,15 +58,29 @@ window.onload=function(){
     }
     
     banner.timer=setInterval(function(){
-    	if(iNum!=oLi.length-1){iNum++}else{iNum=0;};
+    	if(iNum!=oLi.length-1){
+          iNum++
+        }else{
+          oUl.style.left=w+'px';
+          oUl1.style.left=-(oLi.length-1)*w+'px';
+          iNum=0;
+        };
         startMove(oUl,{'left':-iNum*w},banner_op(iNum));
+        startMove(oUl1,{'left':-oLi.length*w});
         bannerActiveNum(iNum);
     },3000);
 
     oP.onmouseover=function(){clearInterval(banner.timer);}
     oP.onmouseout=function(){banner.timer=setInterval(function(){
-    	if(iNum!=oLi.length-1){iNum++}else{iNum=0;};
+    	if(iNum!=oLi.length-1){
+          iNum++
+        }else{
+          oUl.style.left=w+'px';
+          oUl1.style.left=-(oLi.length-1)*w+'px';
+          iNum=0;
+        };
         startMove(oUl,{'left':-iNum*w},banner_op(iNum));
+        startMove(oUl1,{'left':-oLi.length*w});
         bannerActiveNum(iNum);
     },3000);};
 
