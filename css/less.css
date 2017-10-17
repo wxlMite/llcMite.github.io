@@ -253,13 +253,13 @@ b {
   margin-right: 2px;
 }
 .article_talk b {
-  background-position: 0px -220px;
+  background-position: 0px -221px;
 }
 .article_zan b {
-  background-position: 0px -240px;
+  background-position: 0px -241px;
 }
 .article_time b {
-  background-position: 0px -202px;
+  background-position: 0px -203px;
 }
 .article_talk {
   margin-right: 20px;
@@ -285,11 +285,12 @@ b {
 }
 .good_article li,
 .hot_click li {
-  padding-left: 10px;
-  margin-top: 5px;
+  padding-left: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height:25px;
+  height: 25px;
 }
 .good_article h3,
 .img_article h3,
@@ -313,19 +314,19 @@ b {
   color: #f8490b;
 }
 .good_article li:first-child span b {
-  font-size: 25px;
+  font-size: 20px;
 }
 .good_article li:nth-child(2) span {
   color: #b9b9b9;
 }
 .good_article li:nth-child(2) span b {
-  font-size: 23px;
+  font-size: 20px;
 }
 .good_article li:nth-child(3) span {
   color: #b9b9b9;
 }
 .good_article li:nth-child(3) span b {
-  font-size: 21px;
+  font-size: 20px;
 }
 .img_article img {
   width: 75px;
