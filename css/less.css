@@ -5,7 +5,7 @@
 body {
   background: #333333;
   font-size: 12px;
-  font-family: "宋体";
+  font-family: "微软雅黑";
   color: #b9b9b9;
 }
 li {
@@ -579,7 +579,6 @@ b {
   box-sizing:border-box;
 }
 .plug h3{
-  height:30px;
-  font-size:28px;
+  font-size:18px;
   padding-bottom:10px;
 }
