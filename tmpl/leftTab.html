@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html ng-app='myapp'>
+<head>
+<meta charset="utf-8">
+
+<title>首页</title>
+<link rel="stylesheet" href="../css/less.css">
+<style>
+.box { width:400px; height:500px; position:relative; background:url(img/loader_ico.gif) no-repeat center #fff; float:left; margin-right:60px; }
+.box img { width:400px; height:500px; }
+.box ul { width:40px; position:absolute; top:0; right:-50px; }
+.box li { width:40px; height:40px; margin-bottom:4px; background:#666; }
+.box .active { background:#FC3; }
+.box span { top:0; }
+.box p { bottom:0; margin:0; }
+.box p,.box span { position:absolute; left:0; width:400px; height:30px; line-height:30px; text-align:center; color:#fff; background:#000; }
+
+</style>
+<script src='../js/scripts.js'></script>
+</head>
+<body>
+<div class="head">
+  <div class="comwidth">
+  <a href="#/">博客首页</a>
+  <a href="#/write">心情随写</a>
+  <a href="#/work">工作经历</a>
+  <a href="#/project">我的项目</a>
+  <a href="#/example">js实例</a>
+  <a href="#/skill">我的技能</a> 
+  <a href="#/record">学习笔录</a>
+  </div>
+</div>
+
+<div class="main clearfix">
+   <div class="comwidth">
+   <!-- 轮播 -->
+      <div class="banner fl">
+        <p class="banner_page">
+          <a href="javascript:;" id="prev"> < </a>
+          <a href='javascript:;' class="banner_list">1</a>
+          <a href='javascript:;' class="banner_list">2</a>
+          <a href='javascript:;' class="banner_list">3</a>
+          <a href='javascript:;' class="banner_list">4</a>
+          <a href="javascript:;" id="next"> > </a>       
+        </p>
+        <ul class="banner_ul">
+        <li><img src="../img/banner1.jpg" ><div class="banner_context"><h5>渡人如渡己，渡已，亦是渡</h5>
+<p>当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</p>
+</div></li>
+        <li><img src="../img/banner1.jpg" ><div class="banner_context"><h5>渡人如渡己，渡已，亦是渡</h5>
+<p>当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</p></div>
+</li>
+        <li><img src="../img/banner1.jpg" ><div class="banner_context"><h5>渡人如渡己，渡已，亦是渡</h5>
+<p>当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</p></div></li>
+        <li><img src="../img/banner1.jpg" ><div class="banner_context"><h5>渡人如渡己，渡已，亦是渡</h5>
+<p>当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</p></div></li>
+        </ul>
+      </div>
+      <!-- 个人简历 -->
+      <div class="resume radius fr">
+         <h3>我的名片</h3>
+         <div class="resume_box">
+           <p>姓名：刘立冲 || 网名：Mite</p>
+           <p>职业：web前端</p>
+           <p>电话：13632206621</p>
+           <p>email:131649580@qq.com</p>
+         </div>
+         <span class="my_resume" ng-controller="resume">
+           <span><a href="javascript:;" class="talk1" title="Mite的简历"></a></span>
+           <span><a href="javascript:;" class="talk2" title="Mite详细住址"></a></span>
+           <span><a href="javascript:;" class="talk3" title="Mite联系方式"></a></span>
+           <span><a href="javascript:;" class="talk4" title="Mite的爱好"></a></span>
+           <span><a href="javascript:;" class="talk5" title="Mite的相片"></a></span>           
+         </span>
+      </div>    
+   </div>
+</div>
+
+<!-- 插件内容开始 -->
+<div class="comwidth plug radius">
+        <h3>左侧tab切换图片</h3>
+        <div id="pic1" class="box">
+			<img src="" />
+		  <span>数量正在加载中……</span>
+		  <p>文字说明正在加载中……</p>
+		  <ul></ul>
+		</div>
+
+		<div id="pic2" class="box">
+			<img src="" />
+		  <span>数量正在加载中……</span>
+		  <p>文字说明正在加载中……</p>
+		  <ul></ul>
+		</div>
+ 
+</div>
+
+<!-- 插件内容开始 -->
+
+
+<div class="footer">
+  <div class="footer_top">
+    <div class="comwidth">
+      <div class="footer_box_1 fl">
+        <h4>友情链接</h4>
+        <a href="javascript:;">Mite的个人微信公众号</a>
+        <a href="javascript:;">Mite的个人微博</a>
+      </div>
+      <div class="footer_box_2 fl">
+        <h4>最新评论</h4>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="../img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="../img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+        <div class="talk">          
+          <dl>
+            <dt class="talker_img"><img src="../img/s8.jpg"></dt>
+            <dd class="talker_timer"><span class="gray">DanceSmile</span><b class="deep_green">49分钟前</b></dd>
+            <dd class="talker_context"><span class="gray">在</span>如果要学习web前端开发，需要学习什么？<span class="gray">中评论</span></dd>
+            <dd class="light_green">文章非常详细，我很喜欢.前端的工程师文章非常详细，我很喜欢.前端的工程师</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="footer_box_3 fr">
+        <h4>摄影作品</h4>
+        <div class="photo_show">
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+          <div class="photo_box"><img src="../img/s7.jpg"><span class="photo_mask"></span></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="comwidth">
+      <p><span class="gray">Copyright 2013 make by</span> Mite </p>
+    </div>
+  </div>
+</div>
+
+<script>
+     /*
+	重用代码：
+		1、尽量保证 HTML 代码结构一致，可以通过父级选取子元素
+		2、把核心主程序实现，用函数包起来
+		3、把每组里不同的值找出来，通过传参实现
+*/
+
+window.onload = function (){
+	fnTab( 'pic1', [ 'img/1.png', 'img/2.png', 'img/3.png', 'img/4.png' ], [ '小宠物', '图片二', '图片三', '面具' ], 'onclick' );
+	fnTab( 'pic2', [ 'img/2.png', 'img/3.png', 'img/4.png' ], [ '图片二', '图片三', '面具' ], 'onmouseover' );
+};
+
+function fnTab( id, arrUrl, arrText, evt ){
+	var oDiv = document.getElementById(id);
+	var oImg = oDiv.getElementsByTagName('img')[0];
+	var oSpan = oDiv.getElementsByTagName('span')[0];
+	var oP = oDiv.getElementsByTagName('p')[0];
+	var oUl = oDiv.getElementsByTagName('ul')[0];
+	var aLi = oUl.getElementsByTagName('li');
+	var num = 0;
+	
+	for( var i=0; i<arrUrl.length; i++ ){
+		oUl.innerHTML += '<li></li>';
+	}
+	
+	// 初始化
+	function fnTab(){
+		oImg.src = arrUrl[num];
+		oSpan.innerHTML = 1+num+' / '+arrUrl.length;
+		oP.innerHTML = arrText[num];
+		for( var i=0; i<aLi.length; i++ ){
+			aLi[i].className = '';
+		}
+		aLi[num].className = 'active';
+	}
+	fnTab();
+	
+	for( var i=0; i<aLi.length; i++ ){
+		aLi[i].index = i;			// 索引值
+		aLi[i][evt] = function (){
+			num = this.index;
+			fnTab();
+		};
+	}
+}
+
+</script>
+
+</body>
+</html>

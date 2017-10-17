@@ -569,3 +569,16 @@ b {
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.5s;
 }
+
+
+.plug{
+  margin-top:20px;
+  height:700px;
+  background:#222222;
+  padding:20px;
+  box-sizing:border-box;
+}
+.plug h3{
+  height:30px;
+  padding-bottom:10px;
+}
