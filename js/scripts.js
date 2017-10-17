@@ -1,4 +1,4 @@
-window.onload=function(){
+
 	//轮播开始
 	var banner=document.querySelector('.banner');
 	var oUl=document.querySelector('.banner_ul');
@@ -100,7 +100,7 @@ window.onload=function(){
     }
     //轮播结束
 
-}
+
 
 //运动框架
 function getStyle(obj, attr)
