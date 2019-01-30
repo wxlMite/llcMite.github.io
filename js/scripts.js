@@ -3,7 +3,7 @@
 	var banner=document.querySelector('.banner');
 	var oUl=document.querySelector('.banner_ul');
 	var oLi=document.querySelectorAll('.banner_ul li');
-
+  console.log(oLid);
   var oUl1=oUl.cloneNode(true);
   banner.appendChild(oUl1);
   oUl1.style.zIndex='9';
